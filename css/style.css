@@ -326,3 +326,48 @@ body{
 }
 .validation-list a:hover,
 .validation-list a:focus{color:rgb(255,0,0);}
+/* 웹 관련 용어 */
+.term{
+  border:1px solid #aaa;
+  border-radius: 5px;
+  background: #bbb linear-gradient(to bottom, #bbb, #eee);
+  padding: 10px 15px;
+}
+.term-heading{
+  font-size:1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  
+}
+.term-list > div{
+ margin-top:10px;
+  
+}
+.term-list-subject, .term-list-brief{
+  width:145px;
+  float:right;
+}
+.term-list-subject{
+  color:#296897;
+}
+
+.term-list-thumbnail{
+  background:red;
+  float:left;
+}
+.term-list-thumbnail img{
+  vertical-align: middle;
+}
+.term-list-brief{
+  margin-top:5px;
+  line-height: 1.5;
+}
+
+/*  */
+.even .term-list-thumbnail{
+  float:right;
+}
+.even .term-list-brief, .even .term-list-subject{
+  float:left;
+}
