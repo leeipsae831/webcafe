@@ -617,3 +617,69 @@ body{
   right: 2px;
   padding:8px;
 }
+/* 슬로건 */
+.slogan{
+  padding:10px 100px 10px 170px;
+  position: relative;
+  color:#a09784;
+}
+.slogan-heading{
+  width:110px;
+  height: 83px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top:10px;
+  position: absolute;
+  left:35px;
+  bottom: -35px;
+}
+.slogan-heading::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: url("images/coffee.png") no-repeat;
+}
+.slogan-content q::before{
+  font-size:3rem;
+  position: relative;
+  top:10px;
+}
+.slogan-content q::after{
+  content: "";
+}
+/* 풋터 */
+.footer{
+  padding:10px 100px 10px 170px;
+  position: relative;
+
+}
+.footer-logo{
+  position: absolute;
+  top:55px;
+  left:35px;
+}
+.guide{
+  background: #7b8385;
+  display: flex;
+  color:#fff;
+  padding:5px 15px;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.address, .copyright{
+  font-style:normal;
+  font-size: 1.3rem;
+  margin-top:10px;
+}
+.address span{
+  margin-right: 15px;
+}
+.badge{
+  position: absolute;
+  top:10px;
+  right:0;
+}
