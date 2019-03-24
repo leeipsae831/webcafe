@@ -489,10 +489,10 @@ body{
   padding: 10px;
   background: #ccc linear-gradient(#ccc, #eee);
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-size: 1.5rem;
 }
-.event-related span, .event-related span{
+.event-related span, .event-related span, .favorite-heading span{
   color:#ed552f;
 }
 .event{
@@ -563,4 +563,57 @@ body{
   outline:1px solid rgba(0,0,210,1);
   outline-offset: -2px;
   
+}
+/* 인기사이트 */
+.favorite{
+  position: relative;
+  border:1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 10px 5px 10px;
+  margin-top:20px;
+  background: #CCC linear-gradient(#ccc, #eee);
+}
+.favorite-list{
+  margin-top:5px;
+  overflow: hidden;
+  counter-reset: 0;
+}
+.favorite-list li{
+  margin: 5px 0;
+  counter-increment: number;
+  display: flex;
+  align-items: center;
+}
+
+.favorite-list li::before{
+  content:counter(number);
+  color:#fff;
+  font-size:1.2rem;
+  padding: 0 5px;
+  background: #999;
+  border-radius:2px;
+  margin-right: 5px;
+}
+.up, .stop, .down{
+  font-style: normal;
+  margin-left:auto;
+  width:9px;
+  height:11px;
+  text-indent: 9px;
+  overflow: hidden;
+  background-image:url("images/rank.png");
+  background-repeat: no-repeat;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+
+.favorite-more{
+  position: absolute;
+  top:2px;
+  right: 2px;
+  padding:8px;
 }
