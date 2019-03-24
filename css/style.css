@@ -481,3 +481,86 @@ body{
   right: -8px;
   padding: 8px;
 }
+
+/* 신규이벤트 및 관련 사이트 */
+.event-related{
+  border:1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.event-heading, .related-heading{
+  font-size: 1.5rem;
+}
+.event-related span, .event-related span{
+  color:#ed552f;
+}
+.event{
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+.event p{
+  margin:10px 0px;
+  line-height:1.5;
+}
+.event-thumbnail img{
+  border:1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+.event-brief em{
+  font-style:normal;
+}
+.btn-event{
+  height:18px;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.btn-event-next{
+  background-position: -36px 0;
+}
+.btn-event-prev, .btn-event-next{
+  width:19px;
+  height:100%;
+  border:0;
+  padding:18px 0 0 0;
+  background-image: url("images/back_forward.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.related{
+  margin-top:10px;
+}
+.related-list{
+  background: #fff;
+  margin-top:10px;
+  border:1px solid #aaa;
+  border-radius: 5px;
+  height:27px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.related-act{
+  height: 137px;
+  padding:5px 0;
+}
+/* .related-list:hover .related-list:focus{
+  height: 137px;
+  padding:5px 0;
+  background: pink;
+} */
+.related-list li{
+  height: 25px;
+  line-height: 25px;
+}
+
+.related-list a{
+  display: block;
+  padding-left:25px;
+}
+.related-list a:focus{
+  outline:1px solid rgba(0,0,210,1);
+  outline-offset: -2px;
+  
+}
